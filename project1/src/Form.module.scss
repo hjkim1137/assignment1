@@ -28,7 +28,7 @@ body {
 .contentBox {
   width: 700px;
   background-color: white;
-  height: 80px;
+  height: 100px;
   margin: 20px auto;
   border-radius: 10px;
   border: 0.2px solid #d9dce0;
@@ -39,6 +39,11 @@ body {
 .contentBox1 {
   font-size: 25px;
   border: none;
+  width: 80%;
+}
+
+.contentBoxFlex {
+  display: flex;
 }
 
 .contentBox2 {
@@ -46,4 +51,35 @@ body {
   border: none;
   font-size: 15px;
   margin-top: 20px;
+}
+
+.shortText,
+.longText {
+  border: none;
+  font-size: 15px;
+  color: #707579;
+  margin-top: 20px;
+}
+
+.option {
+  display: flex;
+  font-size: 15px;
+  color: #707579;
+  margin-top: 15px;
+}
+
+.optionText {
+  margin-left: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+.optionDelete {
+  border: none;
+  background-color: white;
+  font-weight: 700;
+  font-size: 15px;
+  color: #707579;
+  cursor: pointer;
+  margin: auto 10px auto auto;
 }

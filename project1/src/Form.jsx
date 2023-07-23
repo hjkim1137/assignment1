@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Form.module.scss";
+import ShortAnswer from "./ShortAnswer";
+import LongAnswer from "./LongAnswer";
+import MultipleChoice from "./MultipleChoice";
+import CheckBox from "./CheckBox";
+import DropDown from "./DropDown";
+import SelectBox from "./SelectBox";
 
 function Form() {
   return (
@@ -22,20 +28,19 @@ function Form() {
       </div>
 
       <div className={styles.contentBox}>
-        <div>
+        <div className={styles.contentBoxFlex}>
           <input
             type="text"
             className={styles.contentBox1}
-            placeholder="제목없는 설문지"
+            placeholder="질문"
           ></input>
+          <SelectBox />
         </div>
-        <div>
-          <input
-            type="text"
-            className={styles.contentBox2}
-            placeholder="설문지 설명"
-          ></input>
-        </div>
+        <ShortAnswer />
+        {/* <LongAnswer /> */}
+        {/* <MultipleChoice /> */}
+        {/* <CheckBox /> */}
+        {/* <DropDown /> */}
       </div>
     </>
   );
