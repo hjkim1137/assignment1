@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "./Form";
+import Form from "./components/Form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ShortAnswer from "./ShortAnswer";
+import ShortAnswer from "./components/ShortAnswer";
 
 function App() {
   return (
